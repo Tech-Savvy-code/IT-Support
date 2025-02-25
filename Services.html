@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - IT Support Assistants</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="left-info">
+            <i class="fas fa-phone-alt"></i> +254 4562-7890
+            <i class="fas fa-clock"></i> Open Hours: Mon-Fri 8:00 AM - 6:00 PM
+        </div>
+    <!-- Search Bar -->
+<div class="search-bar">
+    <form action="#" method="get" id="search-form">
+        <input type="text" placeholder="Search..." class="search-input" id="search-input">
+        <button type="button" class="search-btn" id="search-btn"><i class="fas fa-search"></i></button>
+    </form>
+</div>
+        <div class="right-info">
+            <i class="fas fa-envelope"></i> info@itsupport.com
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="images/IT LOGO.png" alt="Logo" class="logo-img">
+            <h1>IT Support Assistants</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Services.html" class="active">Services</a></li>
+                <li><a href="About Us.html">About Us</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+                <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+                <li><a href="Terms $ Conditions.html">Terms & Conditions</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p>Explore the wide range of IT services we provide to help you thrive in the digital age.</p>
+            
+            <!-- Slideshow Container -->
+<div class="services-slideshow">
+    <div class="services-wrapper">
+        <!-- Service Items -->
+        <div class="service-item">
+            <i class="fas fa-laptop-code service-icon"></i>
+            <h3>Website Development</h3>
+            <p class="service-desc">
+                We build responsive and dynamic websites tailored to your needs. 
+                Our team specializes in creating SEO-friendly designs to ensure your site ranks high and provides a seamless user experience. We handle everything from e-commerce to blogs and business sites.</span>
+            </p>
+            <button class="order-service-btn">Order Service</button>
+        </div>
+        <div class="service-item">
+            <i class="fas fa-tools service-icon"></i>
+            <h3>Hardware Repair</h3>
+            <p class="service-desc">
+                Expert repairs for laptops, desktops, and IT equipment. 
+                From replacing faulty components to full system diagnostics, we ensure your hardware runs smoothly. Our services cover all major brands with warranty-backed repairs.</span>
+            </p>
+            <button class="order-service-btn">Order Service</button>
+        </div>
+        <div class="service-item">
+            <i class="fas fa-shield-alt service-icon"></i>
+            <h3>Cybersecurity</h3>
+            <p class="service-desc">
+                Secure your data with our comprehensive solutions. 
+             We offer intrusion prevention, vulnerability scanning, and threat response strategies to safeguard your systems against evolving cyber threats.</span>
+            </p>
+                      <button class="order-service-btn">Order Service</button>
+        </div>
+        <!-- Add more service items following the same structure -->
+    </div>
+</div>
+<div id="orderPopup" class="popup">
+    <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <h3>Order Service</h3>
+        <form id="orderForm" method="POST">
+            <input type="hidden" name="form_type" value="order">
+            <div class="field">
+                <input type="text" id="orderName" name="orderName" placeholder="Your Name" required>
+            </div>
+            <div class="field">
+                <input type="email" id="orderEmail" name="orderEmail" placeholder="Your Email" required>
+            </div>
+            <div class="field">
+                <textarea id="orderDetails" name="orderDetails" placeholder="Service Details" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-order-btn">Submit Order</button>
+        </form>
+        
+        
+    </div>
+</div>
+
+<!-- Slideshow Controls -->
+<div class="slideshow-controls">
+    <button id="prev-btn"><i class="fas fa-chevron-left"></i></button>
+    <button id="next-btn"><i class="fas fa-chevron-right"></i></button>
+</div>
+
+        </div>
+    </section>
+    <!-- Back to Top Button -->
+<button class="back-to-top" onclick="scrollToTop()">↑ Back to Top</button>
+
+<!-- Live Chat (Tidio, Intercom, or similar service) -->
+<!-- You can integrate third-party chat services like Tidio -->
+<!-- For simplicity, just a placeholder is here -->
+<div id="chat-container">
+    <button>Chat with Us</button>
+</div>
+    
+    
+    <!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <!-- Footer Left Section -->
+        <div class="footer-left">
+            <h3>IT Support Assistants</h3>
+            <p>Your go-to solution for all IT-related needs. We are here to assist you 24/7 with any technical difficulties.</p>
+            <p>Stay connected with us through our various communication channels and stay updated with the latest IT trends.</p>
+            <div class="newsletter">
+                <h4>Subscribe to our Newsletter</h4>
+                <form action="#" method="post" class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" class="newsletter-input">
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Footer Center Section -->
+        <div class="footer-center">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="About Us.html">About Us</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+                <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+                <li><a href="ter">Terms & Conditions</a></li>
+            </ul>
+        </div>
+
+        <!-- Footer Right Section -->
+        <div class="footer-right">
+            <h4>Contact Us</h4>
+            <p><i class="fas fa-phone-alt"></i> +254 7456-7890</p>
+            <p><i class="fas fa-envelope"></i> info@itsupport.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> 1234 IT Support Lane, Tech City</p>
+            <h4>Follow Us</h4>
+            <div class="footer-social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="footer-bottom-links">
+            <p>&copy; 2024 IT Support Assistants. All Rights Reserved. | <a href="#">Sitemap</a> | <a href="#">FAQs</a> | <a href="#">Support</a></p>
+        </div>
+    </div>
+</footer>
+<script>
+// Back-to-Top Button Visibility and Scroll Function
+    window.onscroll = function() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            document.querySelector('.back-to-top').style.display = "block";
+        } else {
+            document.querySelector('.back-to-top').style.display = "none";
+        }
+    };
+    
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    
+    // Cookie Consent Banner
+    function acceptCookies() {
+        document.getElementById('cookie-consent').style.display = 'none';
+}</script>
+<script>
+    //js for pop up orderservice button
+    document.addEventListener("DOMContentLoaded", () => {
+    const orderServiceBtns = document.querySelectorAll(".order-service-btn");
+    const popup = document.getElementById("orderPopup");
+    const closePopup = document.querySelector(".close-popup");
+
+    // Show popup when "Order Service" is clicked
+    orderServiceBtns.forEach(button => {
+        button.addEventListener("click", () => {
+            popup.style.display = "flex"; // Show popup
+        });
+    });
+
+    // Hide popup when the close button is clicked
+    closePopup.addEventListener("click", () => {
+        popup.style.display = "none"; // Hide popup
+    });
+
+    // Hide popup when clicking outside the popup content
+    window.addEventListener("click", (e) => {
+        if (e.target === popup) {
+            popup.style.display = "none"; // Hide popup
+        }
+    });
+});
+
+</script>
+<script>
+//js for slideshow display
+document.addEventListener("DOMContentLoaded", () => {
+    const wrapper = document.querySelector(".services-wrapper");
+    const items = document.querySelectorAll(".service-item");
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
+
+    let currentIndex = 0;
+
+    const updateSlideshow = () => {
+        const slideWidth = items[0].offsetWidth + 20; // Item width + margin
+        wrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    };
+
+    prevBtn.addEventListener("click", () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateSlideshow();
+        }
+    });
+
+    nextBtn.addEventListener("click", () => {
+        if (currentIndex < items.length - 2) {
+            currentIndex++;
+            updateSlideshow();
+        }
+    });
+
+    window.addEventListener("resize", updateSlideshow);
+});
+</script>
+<script>
+    // Function to handle form submission
+    function handleFormSubmit(formId) {
+        const form = document.querySelector(formId);
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(form);
+
+            fetch("submit_form.php", {
+                method: "POST",
+                body: formData,
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === "success") {
+                        alert(data.message);
+                        form.reset(); // Reset the form fields
+                    } else {
+                        alert("Error: " + data.message);
+                    }
+                })
+                .catch(error => {
+                    alert("An error occurred: " + error.message);
+                });
+        });
+    }
+
+    // Attach event listeners for both forms
+    handleFormSubmit("#contactForm");
+    handleFormSubmit("#orderForm");
+</script>
+
+
+      <!-- Link to JavaScript file -->
+      <script src="javascript/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Support Assistants - Home</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="CSS/styles.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap JS (for interactive components like navbar toggles) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Top Bar with Contact Info and Search Bar -->
+<div class="top-bar">
+    <div class="left-info">
+        <span><i class="fas fa-phone-alt"></i> +254 7456-7890</span>
+        <span><i class="fas fa-clock"></i> Open Hours: Mon-Fri 8:00 AM - 6:00 PM</span>
+    </div>
+    
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <form action="#" method="get">
+            <input type="text" placeholder="Search..." class="search-input">
+            <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+    
+    <div class="right-info">
+        <span><i class="fas fa-envelope"></i> info@itsupport.com</span>
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+    </div>
+</div>
+
+    <!-- Main Navigation Bar -->
+    <header>
+        <div class="logo">
+            <!-- Add your logo image in the images folder or use text -->
+            <img src="images/IT LOGO.png" alt="IT Support Logo" class="logo-img">
+            <h1>IT Support <span> Assistants</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="About Us.html">About Us</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+                <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+                <li><a href="Terms $ Conditions.html">Terms & Conditions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <div class="content-text">
+            <h2>Your Trusted IT Support Team</h2>
+            <p>We provide professional IT support services to help your business thrive.</p>
+            <div class="buttons">
+                <a href="Contact Us.html" class="btn get-in-touch">Get In Touch</a>
+                <a href="About Us.html" class="btn more-info">Learn More</a>
+            </div>
+        </div>
+        <div class="content-image">
+            <img src="images/people-1979261.jpg">
+        </div>
+    </section>
+    <!-- Back to Top Button -->
+<button class="back-to-top" onclick="scrollToTop()">↑ Back to Top</button>
+
+<!-- Live Chat (Tidio, Intercom, or similar service) -->
+<!-- You can integrate third-party chat services like Tidio -->
+<!-- For simplicity, just a placeholder is here -->
+<div id="chat-container">
+    <button>Chat with Us</button>
+</div>
+    
+
+  <!--  Footer section -->
+<footer>
+    <div class="footer-content">
+        <!-- Footer Left Section -->
+        <div class="footer-left">
+            <h3>IT Support Assistants</h3>
+            <p>Your go-to solution for all IT-related needs. We are here to assist you 24/7 with any technical difficulties.</p>
+            <p>Stay connected with us through our various communication channels and stay updated with the latest IT trends.</p>
+            <div class="newsletter">
+                <h4>Subscribe to our Newsletter</h4>
+                <form action="#" method="post" class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" class="newsletter-input">
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Footer Center Section -->
+        <div class="footer-center">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+                <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+                <li><a href="Terms $ Conditions.html">Terms & Conditions</a></li>
+            </ul>
+        </div>
+
+        <!-- Footer Right Section -->
+        <div class="footer-right">
+            <h4>Contact Us</h4>
+            <p><i class="fas fa-phone-alt"></i> +254 7456-7890</p>
+            <p><i class="fas fa-envelope"></i> info@itsupport.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> 1234 IT Support Lane, Tech City</p>
+            <h4>Follow Us</h4>
+            <div class="footer-social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="footer-bottom-links">
+            <p>&copy; 2024 IT Support Assistants. All Rights Reserved. | <a href="#">Sitemap</a> | <a href="#">FAQs</a> | <a href="#">Support</a></p>
+        </div>
+    </div>
+</footer>
+<script>// Back-to-Top Button Visibility and Scroll Function
+    window.onscroll = function() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            document.querySelector('.back-to-top').style.display = "block";
+        } else {
+            document.querySelector('.back-to-top').style.display = "none";
+        }
+    };
+    
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    
+    // Cookie Consent Banner
+    function acceptCookies() {
+        document.getElementById('cookie-consent').style.display = 'none';
+    }</script>
+
+
+    <!-- Link to JavaScript file -->
+    <script src="javascript/main.js"></script>
+</body>
+</html>
