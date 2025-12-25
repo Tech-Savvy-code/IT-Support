@@ -1,278 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Support Assistants - Home</title>
-    <!-- Link to your CSS file -->
+    <title>Terms & Conditions - IT Support Assistants</title>
     <link rel="stylesheet" href="CSS/styles.css">
-    <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="left-info">
+            <i class="fas fa-phone-alt"></i> +254 7456-7890
+            <i class="fas fa-clock"></i> Open Hours: Mon-Fri 8:00 AM - 6:00 PM
+        </div>
 
-    <!-- Top Bar with Contact Info -->
-<!-- Top Bar with Contact Info and Search Bar -->
-<div class="top-bar">
-    <div class="left-info">
-        <i class="fas fa-phone-alt"></i> +254 7456-7890
-        <i class="fas fa-clock"></i> Open Hours: Mon-Fri 8:00 AM - 6:00 PM
-    </div>
-    
-    <!-- Search Bar -->
-    <div class="search-bar">
-        <form action="#" method="get">
-            <input type="text" placeholder="Search..." class="search-input">
-            <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
-        </form>
-    </div>
-    
-    <div class="right-info">
-        <i class="fas fa-envelope"></i> info@itsupport.com
-        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-    </div>
-</div>
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <form action="#" method="get">
+                <input type="text" placeholder="Search..." class="search-input">
+                <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
 
-    <!-- Main Navigation Bar -->
+        <div class="right-info">
+            <i class="fas fa-envelope"></i> info@itsupport.com
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <!-- Header -->
     <header>
         <div class="logo">
-            <!-- Add your logo image in the images folder or use text -->
             <img src="images/IT LOGO.png" alt="IT Support Logo" class="logo-img">
-            <h1>IT Support <span> Assistants</span></h1>
+            <h1>IT Support <span>Assistants</span></h1>
         </div>
-        <nav>
+
+        <!-- Hamburger Menu Button -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+        <nav id="mainNav">
             <ul>
                 <li><a href="Home.html">Home</a></li>
                 <li><a href="Services.html">Services</a></li>
                 <li><a href="About Us.html">About Us</a></li>
                 <li><a href="Contact Us.html">Contact Us</a></li>
                 <li><a href="Privacy Policy.html">Privacy Policy</a></li>
-                <li><a href="Terms $ Conditions.html">Terms & Conditions</a></li>
+                <li><a href="Terms $ Conditions.html" class="active">Terms & Conditions</a></li>
             </ul>
         </nav>
     </header>
- <!-- Terms and Conditions Section -->
-<section class="terms-and-conditions">
-    <div class="container">
-        <h1 class="page-title">Terms and Conditions</h1>
 
-        <!-- Progress Bar -->
-        <div id="progress-bar" class="progress-bar"></div>
+    <!-- Terms and Conditions Section -->
+    <section class="terms-and-conditions">
+        <div class="container">
+            <h1 class="page-title">Terms and Conditions</h1>
 
-        <div class="sticky-nav">
-            <ul>
-                <li><a href="#section1">Introduction</a></li>
-                <li><a href="#section2">User Responsibilities</a></li>
-                <li><a href="#section3">Privacy Policy</a></li>
-                <li><a href="#section4">Governing Law</a></li>
-                <li><a href="#section5">Contact Information</a></li>
-            </ul>
+            <!-- Breadcrumb -->
+            <div class="breadcrumb">
+                <a href="Home.html">Home</a> &gt; <span>Terms & Conditions</span>
+            </div>
+
+            <!-- Progress Bar -->
+            <div id="progress-bar" class="progress-bar"></div>
+
+            <div class="sticky-nav">
+                <ul>
+                    <li><a href="#section1">Introduction</a></li>
+                    <li><a href="#section2">User Responsibilities</a></li>
+                    <li><a href="#section3">Privacy Policy</a></li>
+                    <li><a href="#section4">Governing Law</a></li>
+                    <li><a href="#section5">Contact Information</a></li>
+                </ul>
+            </div>
+
+            <!-- Terms Content -->
+            <div class="terms-content">
+                <div id="section1" class="term-section">
+                    <h2 class="section-title">1. Introduction</h2>
+                    <div class="accordion-content">
+                        <p>Welcome to IT Support Assistants. These Terms and Conditions govern your use of our website
+                            and services. By accessing or using our services, you agree to be bound by these terms. If
+                            you disagree with any part of the terms, you may not access our services.</p>
+                        <p>Our services include but are not limited to: IT support, website development, hardware
+                            repair, cybersecurity services, cloud services, and network setup.</p>
+                    </div>
+                </div>
+
+                <div id="section2" class="term-section">
+                    <h2 class="section-title">2. User Responsibilities</h2>
+                    <div class="accordion-content">
+                        <p>As a user of our services, you agree to:</p>
+                        <ul>
+                            <li>Provide accurate and complete information when requesting services</li>
+                            <li>Use our services only for lawful purposes</li>
+                            <li>Not attempt to interfere with or disrupt our services</li>
+                            <li>Not use our services to transmit malicious software or content</li>
+                            <li>Respect intellectual property rights</li>
+                            <li>Maintain the confidentiality of your account credentials</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="section3" class="term-section">
+                    <h2 class="section-title">3. Service Terms</h2>
+                    <div class="accordion-content">
+                        <p><strong>Service Delivery:</strong> We strive to provide services in a timely manner, but
+                            delivery times may vary based on service complexity and current workload.</p>
+                        <p><strong>Payment Terms:</strong> Payment is due as specified in service agreements. Late
+                            payments may result in service suspension.</p>
+                        <p><strong>Service Limitations:</strong> Some services may have limitations based on your
+                            hardware, software, or network capabilities.</p>
+                        <p><strong>Cancellation Policy:</strong> Services may be cancelled according to the terms
+                            specified in your service agreement.</p>
+                    </div>
+                </div>
+
+                <div id="section4" class="term-section">
+                    <h2 class="section-title">4. Privacy and Data Protection</h2>
+                    <div class="accordion-content">
+                        <p>Your privacy is important to us. We handle your personal information in accordance with our
+                            Privacy Policy. By using our services, you consent to our collection and use of your
+                            information as described in the Privacy Policy.</p>
+                        <p>We implement reasonable security measures to protect your data, but cannot guarantee absolute
+                            security.</p>
+                    </div>
+                </div>
+
+                <div id="section5" class="term-section">
+                    <h2 class="section-title">5. Intellectual Property</h2>
+                    <div class="accordion-content">
+                        <p>All content on this website, including text, graphics, logos, and software, is the property
+                            of IT Support Assistants or its content suppliers and is protected by copyright laws.</p>
+                        <p>You may not reproduce, distribute, or create derivative works from our content without
+                            express written permission.</p>
+                    </div>
+                </div>
+
+                <div id="section6" class="term-section">
+                    <h2 class="section-title">6. Limitation of Liability</h2>
+                    <div class="accordion-content">
+                        <p>IT Support Assistants shall not be liable for any indirect, incidental, special,
+                            consequential, or punitive damages resulting from your use of or inability to use our
+                            services.</p>
+                        <p>Our total liability for any claims under these terms shall not exceed the amount you paid for
+                            the services in question.</p>
+                    </div>
+                </div>
+
+                <div id="section7" class="term-section">
+                    <h2 class="section-title">7. Governing Law</h2>
+                    <div class="accordion-content">
+                        <p>These terms are governed by the laws of Kenya. Any disputes will be resolved in the courts of
+                            Nairobi, Kenya.</p>
+                        <p>We reserve the right to modify these terms at any time. Changes will be effective immediately
+                            upon posting to our website.</p>
+                    </div>
+                </div>
+
+                <div id="section8" class="term-section">
+                    <h2 class="section-title">8. Contact Information</h2>
+                    <div class="accordion-content">
+                        <p>If you have any questions regarding these terms, feel free to contact us through our <a
+                                href="Contact Us.html">Contact Us</a> page.</p>
+                        <p><strong>Email:</strong> legal@itsupport.com</p>
+                        <p><strong>Phone:</strong> +254 7456-7890</p>
+                        <p><strong>Address:</strong> 1234 IT Support Lane, Tech City, Nairobi, Kenya</p>
+                    </div>
+                </div>
+
+                <!-- Accept Terms Checkbox -->
+                <div class="accept-terms">
+                    <input type="checkbox" id="accept-terms">
+                    <label for="accept-terms">I have read and agree to the Terms and Conditions.</label>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <!-- Terms Content with Accordion Effect -->
-        <div class="terms-content">
-            <div id="section1" class="term-section">
-                <h2 class="section-title">1. Introduction</h2>
-                <div class="accordion-content">
-                    <p>This section outlines the basic terms under which our services are provided. By using our website, you agree to abide by these terms.</p>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" onclick="scrollToTop()">↑ Back to Top</button>
+
+    <!-- Live Chat -->
+    <div id="chat-container">
+        <button>Chat with Us</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>IT Support Assistants</h3>
+                <p>Your go-to solution for all IT-related needs. We are here to assist you 24/7 with any technical
+                    difficulties.</p>
+                <p>Stay connected with us through our various communication channels and stay updated with the latest IT
+                    trends.</p>
+                <div class="newsletter">
+                    <h4>Subscribe to our Newsletter</h4>
+                    <form action="#" method="post" class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" class="newsletter-input">
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </form>
                 </div>
             </div>
 
-            <div id="section2" class="term-section">
-                <h2 class="section-title">2. User Responsibilities</h2>
-                <div class="accordion-content">
-                    <p>As a user, you are responsible for the activities conducted on your account. You agree not to engage in illegal activities while using the service.</p>
+            <div class="footer-center">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="About Us.html">About Us</a></li>
+                    <li><a href="Contact Us.html">Contact Us</a></li>
+                    <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+                    <li><a href="Terms $ Conditions.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-right">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-phone-alt"></i> +254 7456-7890</p>
+                <p><i class="fas fa-envelope"></i> info@itsupport.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> 1234 IT Support Lane, Tech City</p>
+                <h4>Follow Us</h4>
+                <div class="footer-social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
+        </div>
 
-            <div id="section3" class="term-section">
-                <h2 class="section-title">3. Privacy Policy</h2>
-                <div class="accordion-content">
-                    <p>Your privacy is important to us. We ensure the protection of your personal information. Read more in our <a href="/privacy-policy" target="_blank">Privacy Policy</a>.</p>
-                </div>
-            </div>
-
-            <div id="section4" class="term-section">
-                <h2 class="section-title">4. Governing Law</h2>
-                <div class="accordion-content">
-                    <p>These terms are governed by the laws of [Country Name]. Any disputes will be resolved under the jurisdiction of [Country].</p>
-                </div>
-            </div>
-
-            <div id="section5" class="term-section">
-                <h2 class="section-title">5. Contact Information</h2>
-                <div class="accordion-content">
-                    <p>If you have any questions regarding these terms, feel free to contact us through our <a href="/contact">Contact Us</a> page.</p>
-                </div>
-            </div>
-
-            <!-- Accept Terms Checkbox -->
-            <div class="accept-terms">
-                <input type="checkbox" id="accept-terms">
-                <label for="accept-terms">I have read and agree to the Terms and Conditions.</label>
+        <div class="footer-bottom">
+            <div class="footer-bottom-links">
+                <p>&copy; 2024 IT Support Assistants. All Rights Reserved. | <a href="#">Sitemap</a> | <a
+                        href="#">FAQs</a> | <a href="#">Support</a></p>
+                <p class="last-update">Last updated: <span id="currentDate"></span></p>
             </div>
         </div>
-    </div>
-</section>
+    </footer>
 
-<!-- Back to Top Button -->
-<button class="back-to-top" onclick="scrollToTop()">↑ Back to Top</button>
+    <script>
+        // Menu Toggle Functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.getElementById('menuToggle');
+            const mainNav = document.getElementById('mainNav');
+            const body = document.body;
 
-<!-- Live Chat (Tidio, Intercom, or similar service) -->
-<!-- You can integrate third-party chat services like Tidio -->
-<!-- For simplicity, just a placeholder is here -->
-<!-- Chat Floating Button -->
-<div id="chat-container" class="fab" onclick="toggleChatWindow()">
-    <button>Chat with Us</button>
-</div>
+            // Toggle menu when hamburger is clicked
+            if (menuToggle && mainNav) {
+                menuToggle.addEventListener('click', function () {
+                    mainNav.classList.toggle('active');
+                    menuToggle.classList.toggle('active');
+                    body.classList.toggle('menu-open');
 
-<!-- Chat Window -->
-<div id="chatWindow" class="chat-window">
-    <div class="chat-header">
-        <h3>Chat with Us</h3>
-        <button id="closeChat" onclick="closeChatWindow()">X</button>
-    </div>
-    <div id="chatMessages" class="chat-messages">
-        <!-- Chat messages will appear here -->
-    </div>
-    <div class="chat-input-container">
-        <input type="text" id="chatInput" placeholder="Type your message..." />
-        <button id="sendBtn" onclick="sendMessage()">Send</button>
-    </div>
-</div>
+                    const isExpanded = mainNav.classList.contains('active');
+                    menuToggle.setAttribute('aria-expanded', isExpanded);
+                });
 
-
-    <!--  Footer section -->
-<footer>
-    <div class="footer-content">
-        <!-- Footer Left Section -->
-        <div class="footer-left">
-            <h3>IT Support Assistants</h3>
-            <p>Your go-to solution for all IT-related needs. We are here to assist you 24/7 with any technical difficulties.</p>
-            <p>Stay connected with us through our various communication channels and stay updated with the latest IT trends.</p>
-            <div class="newsletter">
-                <h4>Subscribe to our Newsletter</h4>
-                <form action="#" method="post" class="newsletter-form">
-                    <input type="email" placeholder="Enter your email" class="newsletter-input">
-                    <button type="submit" class="newsletter-btn">Subscribe</button>
-                </form>
-            </div>
-        </div>
-        
-        <!-- Footer Center Section -->
-        <div class="footer-center">
-            <h4>Quick Links</h4>
-            <ul class="footer-links">
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Services.html">Services</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="Contact Us.html">Contact Us</a></li>
-                <li><a href="Privacy Policy.html">Privacy Policy</a></li>
-                <li><a href="Terms $ Conditions.html">Terms & Conditions</a></li>
-            </ul>
-        </div>
-        <!-- Footer Right Section -->
-        <div class="footer-right">
-            <h4>Contact Us</h4>
-            <p><i class="fas fa-phone-alt"></i> +254 7456-7890</p>
-            <p><i class="fas fa-envelope"></i> info@itsupport.com</p>
-            <p><i class="fas fa-map-marker-alt"></i> 1234 IT Support Lane, Tech City</p>
-            <h4>Follow Us</h4>
-            <div class="footer-social-icons">
-                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Footer Bottom -->
-    <div class="footer-bottom">
-        <div class="footer-bottom-links">
-            <p>&copy; 2024 IT Support Assistants. All Rights Reserved. | <a href="#">Sitemap</a> | <a href="#">FAQs</a> | <a href="#">Support</a></p>
-        </div>
-    </div>
-</footer>
-<script>
-    document.querySelector('.last-update').innerText = `Last updated: ${new Date().toLocaleDateString()}`;
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>// Initialize AOS (for scroll animations)
-    AOS.init();
-    
-    // Accordion Functionality
-    document.querySelectorAll('.accordion-header').forEach(button => {
-        button.addEventListener('click', () => {
-            const body = button.nextElementSibling;
-            body.style.display = body.style.display === "block" ? "none" : "block";
-        });
-    });
-    
-    // Back-to-Top Button Visibility and Scroll Function
-    window.onscroll = function() {
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            document.querySelector('.back-to-top').style.display = "block";
-        } else {
-            document.querySelector('.back-to-top').style.display = "none";
-        }
-    };
-    
-    function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-    
-   
-    </script>
-    <script>// Toggle Chat Window
-        function toggleChatWindow() {
-            const chatWindow = document.getElementById("chatWindow");
-            chatWindow.style.display = (chatWindow.style.display === "block") ? "none" : "block";
-        }
-        
-        // Close the Chat Window
-        function closeChatWindow() {
-            document.getElementById("chatWindow").style.display = "none";
-        }
-        
-        // Send Message
-        function sendMessage() {
-            const chatInput = document.getElementById("chatInput");
-            const message = chatInput.value.trim();
-            if (message !== "") {
-                displayMessage(message, 'user');
-                chatInput.value = ""; // Clear input field
-        
-                // Simulate a response from the support team after a short delay
-                setTimeout(() => {
-                    const response = "Thank you for your message! We will get back to you shortly.";
-                    displayMessage(response, 'support');
-                }, 1000);
+                // Close menu when clicking on a link
+                const navLinks = mainNav.querySelectorAll('a');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function () {
+                        mainNav.classList.remove('active');
+                        menuToggle.classList.remove('active');
+                        body.classList.remove('menu-open');
+                        menuToggle.setAttribute('aria-expanded', 'false');
+                    });
+                });
             }
-        }
-        
-        // Display Messages in Chat
-        function displayMessage(message, sender) {
-            const chatMessages = document.getElementById("chatMessages");
-        
-            const messageElement = document.createElement("div");
-            messageElement.classList.add('chat-message');
-            messageElement.classList.add(sender);
-        
-            const messageText = document.createElement("p");
-            messageText.textContent = message;
-        
-            messageElement.appendChild(messageText);
-            chatMessages.appendChild(messageElement);
-        
-            // Scroll to the bottom of the chat
-            chatMessages.scrollTop = chatMessages.scrollHeight;
-        }
-        </script>
-    <!-- Link to JavaScript file -->
+
+            // Set current date
+            document.getElementById('currentDate').textContent = new Date().toLocaleDateString();
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId !== '#') {
+                        const targetElement = document.querySelector(targetId);
+                        if (targetElement) {
+                            window.scrollTo({
+                                top: targetElement.offsetTop - 100,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                });
+            });
+
+            // Progress bar functionality
+            window.addEventListener('scroll', function () {
+                const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                const scrolled = (winScroll / height) * 100;
+                document.getElementById("progress-bar").style.width = scrolled + "%";
+            });
+
+            // Accordion functionality for terms
+            document.querySelectorAll('.section-title').forEach(title => {
+                title.addEventListener('click', () => {
+                    const content = title.nextElementSibling;
+                    const isOpen = content.style.display === 'block';
+
+                    // Close all other accordion contents
+                    document.querySelectorAll('.accordion-content').forEach(item => {
+                        item.style.display = 'none';
+                    });
+
+                    // Toggle current
+                    content.style.display = isOpen ? 'none' : 'block';
+                });
+            });
+
+            // Initialize all accordion contents as closed
+            document.querySelectorAll('.accordion-content').forEach(content => {
+                content.style.display = 'none';
+            });
+
+            // Back-to-Top Button
+            window.onscroll = function () {
+                const backToTopBtn = document.querySelector('.back-to-top');
+                if (backToTopBtn) {
+                    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                        backToTopBtn.style.display = "block";
+                    } else {
+                        backToTopBtn.style.display = "none";
+                    }
+                }
+            };
+
+            function scrollToTop() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+
+            // Chat functionality
+            const chatContainer = document.getElementById('chat-container');
+            if (chatContainer) {
+                chatContainer.addEventListener('click', function () {
+                    alert('Chat feature would open here. Integrate with a service like Tidio, Intercom, or Drift.');
+                });
+            }
+
+            // Handle window resize
+            window.addEventListener('resize', function () {
+                if (window.innerWidth > 768 && mainNav && mainNav.classList.contains('active')) {
+                    mainNav.classList.remove('active');
+                    if (menuToggle) menuToggle.classList.remove('active');
+                    body.classList.remove('menu-open');
+                    if (menuToggle) menuToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+
+            // Terms acceptance checkbox
+            const acceptCheckbox = document.getElementById('accept-terms');
+            if (acceptCheckbox) {
+                acceptCheckbox.addEventListener('change', function () {
+                    if (this.checked) {
+                        localStorage.setItem('termsAccepted', 'true');
+                    } else {
+                        localStorage.removeItem('termsAccepted');
+                    }
+                });
+
+                // Check if terms were already accepted
+                if (localStorage.getItem('termsAccepted') === 'true') {
+                    acceptCheckbox.checked = true;
+                }
+            }
+        });
+    </script>
+
     <script src="javascript/main.js"></script>
 </body>
+
 </html>

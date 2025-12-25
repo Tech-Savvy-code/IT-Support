@@ -1,6 +1,6 @@
 
 // Newsletter form submission alert
-document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+document.querySelector('.newsletter-form').addEventListener('submit', function (e) {
     e.preventDefault();
     const email = document.querySelector('.newsletter-input').value;
     if (email) {
@@ -10,3 +10,4 @@ document.querySelector('.newsletter-form').addEventListener('submit', function(e
         alert('Please enter a valid email address.');
     }
 });
+

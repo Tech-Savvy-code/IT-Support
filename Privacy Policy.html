@@ -1,263 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Support Assistants - Home</title>
-    <!-- Link to your CSS file -->
+    <title>Privacy Policy - IT Support Assistants</title>
     <link rel="stylesheet" href="CSS/styles.css">
-    <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="left-info">
+            <i class="fas fa-phone-alt"></i> +254 7456-7890
+            <i class="fas fa-clock"></i> Open Hours: Mon-Fri 7:00 AM - 6:00 PM
+        </div>
 
-    <!-- Top Bar with Contact Info -->
-<!-- Top Bar with Contact Info and Search Bar -->
-<div class="top-bar">
-    <div class="left-info">
-        <i class="fas fa-phone-alt"></i> +254 7456-7890
-        <i class="fas fa-clock"></i> Open Hours: Mon-Fri 7:00 AM - 6:00 PM
-    </div>
-    
-    <!-- Search Bar -->
-    <div class="search-bar">
-        <form action="#" method="get">
-            <input type="text" placeholder="Search..." class="search-input">
-            <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
-        </form>
-    </div>
-    
-    <div class="right-info">
-        <i class="fas fa-envelope"></i> info@itsupport.com
-        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-    </div>
-</div>
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <form action="#" method="get">
+                <input type="text" placeholder="Search..." class="search-input">
+                <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
 
-    <!-- Main Navigation Bar -->
+        <div class="right-info">
+            <i class="fas fa-envelope"></i> info@itsupport.com
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <!-- Header -->
     <header>
         <div class="logo">
-            <!-- Add your logo image in the images folder or use text -->
             <img src="images/IT LOGO.png" alt="IT Support Logo" class="logo-img">
-            <h1>IT Support <span> Assistants</span></h1>
+            <h1>IT Support <span>Assistants</span></h1>
         </div>
-        <nav>
+
+        <!-- Hamburger Menu Button -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+        <nav id="mainNav">
             <ul>
                 <li><a href="Home.html">Home</a></li>
                 <li><a href="Services.html">Services</a></li>
                 <li><a href="About Us.html">About Us</a></li>
                 <li><a href="Contact Us.html">Contact Us</a></li>
-                <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+                <li><a href="Privacy Policy.html" class="active">Privacy Policy</a></li>
                 <li><a href="Terms $ Conditions.html">Terms & Conditions</a></li>
             </ul>
         </nav>
     </header>
+
     <!-- Privacy Policy Content -->
-<section class="privacy-policy">
-    <div class="container">
-        <h1 class="title">Privacy Policy</h1>
+    <section class="privacy-policy">
+        <div class="container">
+            <h1 class="title">Privacy Policy</h1>
 
-        <!-- Accordion for Privacy Policy Sections -->
-        <div class="accordion">
-            <div class="accordion-item">
-                <button class="accordion-header">1. Information We Collect</button>
-                <div class="accordion-body">
-                    <p>We collect personal information that you provide to us when using our services...</p>
+            <!-- Breadcrumb -->
+            <div class="breadcrumb">
+                <a href="Home.html">Home</a> &gt; <span>Privacy Policy</span>
+            </div>
+
+            <!-- Accordion for Privacy Policy Sections -->
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">1. Information We Collect</button>
+                    <div class="accordion-body">
+                        <p>We collect personal information that you provide to us when using our services, including but
+                            not limited to:</p>
+                        <ul>
+                            <li>Name and contact information (email, phone number, address)</li>
+                            <li>Company information if applicable</li>
+                            <li>Payment information for services</li>
+                            <li>Technical information about your device and connection</li>
+                            <li>Usage data and preferences</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">2. How We Use Your Information</button>
+                    <div class="accordion-body">
+                        <p>Your information helps us provide and improve our services. We use it to:</p>
+                        <ul>
+                            <li>Provide and maintain our IT support services</li>
+                            <li>Process transactions and send invoices</li>
+                            <li>Communicate with you about service updates</li>
+                            <li>Improve our website and services</li>
+                            <li>Comply with legal obligations</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">3. Sharing Your Information</button>
+                    <div class="accordion-body">
+                        <p>We may share your personal information with third parties to enhance your experience,
+                            including:</p>
+                        <ul>
+                            <li>Service providers who assist in our operations</li>
+                            <li>Legal authorities when required by law</li>
+                            <li>Business partners with your consent</li>
+                            <li>In connection with business transfers or mergers</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">4. Data Security</button>
+                    <div class="accordion-body">
+                        <p>We implement appropriate security measures to protect your personal information from
+                            unauthorized access, alteration, or destruction. However, no internet transmission is 100%
+                            secure.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">5. Your Rights</button>
+                    <div class="accordion-body">
+                        <p>You have the right to:</p>
+                        <ul>
+                            <li>Access your personal information</li>
+                            <li>Correct inaccurate information</li>
+                            <li>Request deletion of your information</li>
+                            <li>Opt-out of marketing communications</li>
+                            <li>Data portability</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="accordion-item">
-                <button class="accordion-header">2. How We Use Your Information</button>
-                <div class="accordion-body">
-                    <p>Your information helps us provide and improve our services...</p>
+
+            <!-- Google Map Embed -->
+            <div class="google-map">
+                <h2>Our Location</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.682714920534!2d36.82189641431973!3d-1.292988535979207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d1b2f0573d%3A0x4a0c7f3a5f5f5f5f!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2ske!4v1625678901234!5m2!1sen!2ske"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <!-- Related Documents -->
+            <div class="related-docs">
+                <p>For more information, check out our <a href="Terms $ Conditions.html">Terms & Conditions</a> and <a
+                        href="Contact Us.html">Contact Us</a> if you have questions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent" class="cookie-consent">
+        <p>We use cookies to enhance your experience. By using our website, you agree to our <a
+                href="Privacy Policy.html">Privacy Policy</a>.</p>
+        <button onclick="acceptCookies()">I Agree</button>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" onclick="scrollToTop()">↑ Back to Top</button>
+
+    <!-- Live Chat -->
+    <div id="chat-container">
+        <button>Chat with Us</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>IT Support Assistants</h3>
+                <p>Your go-to solution for all IT-related needs. We are here to assist you 24/7 with any technical
+                    difficulties.</p>
+                <p>Stay connected with us through our various communication channels and stay updated with the latest IT
+                    trends.</p>
+                <div class="newsletter">
+                    <h4>Subscribe to our Newsletter</h4>
+                    <form action="#" method="post" class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" class="newsletter-input">
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </form>
                 </div>
             </div>
-            <div class="accordion-item">
-                <button class="accordion-header">3. Sharing Your Information</button>
-                <div class="accordion-body">
-                    <p>We may share your personal information with third parties to enhance your experience...</p>
+
+            <div class="footer-center">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="About Us.html">About Us</a></li>
+                    <li><a href="Contact Us.html">Contact Us</a></li>
+                    <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+                    <li><a href="Terms $ Conditions.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-right">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-phone-alt"></i> +254 7456-7890</p>
+                <p><i class="fas fa-envelope"></i> info@itsupport.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> 1234 IT Support Lane, Tech City</p>
+                <h4>Follow Us</h4>
+                <div class="footer-social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
 
-        <!-- Google Map Embed (Our Location) -->
-        <div class="google-map" data-aos="fade-up">
-            <h2>Our Location</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=...YourGoogleMapEmbedLink..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-
-        <!-- Related Documents -->
-        <div class="related-docs">
-            <p>For more information, check out our <a href="/terms-of-service">Terms of Service</a> and <a href="/cookie-policy">Cookie Policy</a>.</p>
-        </div>
-    </div>
-</section>
-
-<!-- Cookie Consent Banner -->
-<div id="cookie-consent" class="cookie-consent">
-    <p>We use cookies to enhance your experience. By using our website, you agree to our <a href="/privacy-policy">Privacy Policy</a>.</p>
-    <button onclick="acceptCookies()">I Agree</button>
-</div>
-
-<!-- Back to Top Button -->
-<button class="back-to-top" onclick="scrollToTop()">↑ Back to Top</button>
-
-<!-- Live Chat (Tidio, Intercom, or similar service) -->
-<!-- You can integrate third-party chat services like Tidio -->
-<!-- For simplicity, just a placeholder is here -->
-<!-- Chat Floating Button -->
-<div id="chat-container" class="fab" onclick="toggleChatWindow()">
-    <button>Chat with Us</button>
-</div>
-
-<!-- Chat Window -->
-<div id="chatWindow" class="chat-window">
-    <div class="chat-header">
-        <h3>Chat with Us</h3>
-        <button id="closeChat" onclick="closeChatWindow()">X</button>
-    </div>
-    <div id="chatMessages" class="chat-messages">
-        <!-- Chat messages will appear here -->
-    </div>
-    <div class="chat-input-container">
-        <input type="text" id="chatInput" placeholder="Type your message..." />
-        <button id="sendBtn" onclick="sendMessage()">Send</button>
-    </div>
-</div>
-
-    
-    <!--  Footer section -->
-<footer>
-    <div class="footer-content">
-        <!-- Footer Left Section -->
-        <div class="footer-left">
-            <h3>IT Support Assistants</h3>
-            <p>Your go-to solution for all IT-related needs. We are here to assist you 24/7 with any technical difficulties.</p>
-            <p>Stay connected with us through our various communication channels and stay updated with the latest IT trends.</p>
-            <div class="newsletter">
-                <h4>Subscribe to our Newsletter</h4>
-                <form action="#" method="post" class="newsletter-form">
-                    <input type="email" placeholder="Enter your email" class="newsletter-input">
-                    <button type="submit" class="newsletter-btn">Subscribe</button>
-                </form>
+        <div class="footer-bottom">
+            <div class="footer-bottom-links">
+                <p>&copy; 2024 IT Support Assistants. All Rights Reserved. | <a href="#">Sitemap</a> | <a
+                        href="#">FAQs</a> | <a href="#">Support</a></p>
+                <p class="last-update">Last updated: <span id="currentDate"></span></p>
             </div>
         </div>
-        
-        <!-- Footer Center Section -->
-        <div class="footer-center">
-            <h4>Quick Links</h4>
-            <ul class="footer-links">
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Services.html">Services</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="Contact Us.html">Contact Us</a></li>
-                <li><a href="Privacy Policy.html">Privacy Policy</a></li>
-                <li><a href="Terms $ Conditions.html">Terms & Conditions</a></li>
-            </ul>
-        </div>
-        <!-- Footer Right Section -->
-        <div class="footer-right">
-            <h4>Contact Us</h4>
-            <p><i class="fas fa-phone-alt"></i> +254 7456-7890</p>
-            <p><i class="fas fa-envelope"></i> info@itsupport.com</p>
-            <p><i class="fas fa-map-marker-alt"></i> 1234 IT Support Lane, Tech City</p>
-            <h4>Follow Us</h4>
-            <div class="footer-social-icons">
-                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Footer Bottom -->
-    <div class="footer-bottom">
-        <div class="footer-bottom-links">
-            <p>&copy; 2024 IT Support Assistants. All Rights Reserved. | <a href="#">Sitemap</a> | <a href="#">FAQs</a> | <a href="#">Support</a></p>
-        </div>
-    </div>
-</footer>
-<script>
-document.querySelector('.last-update').innerText = `Last updated: ${new Date().toLocaleDateString()}`;
-</script>
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>// Initialize AOS (for scroll animations)
-AOS.init();
+    </footer>
 
-// Accordion Functionality
-document.querySelectorAll('.accordion-header').forEach(button => {
-    button.addEventListener('click', () => {
-        const body = button.nextElementSibling;
-        body.style.display = body.style.display === "block" ? "none" : "block";
-    });
-});
+    <script>
+        // Menu Toggle Functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.getElementById('menuToggle');
+            const mainNav = document.getElementById('mainNav');
+            const body = document.body;
 
-// Back-to-Top Button Visibility and Scroll Function
-window.onscroll = function() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        document.querySelector('.back-to-top').style.display = "block";
-    } else {
-        document.querySelector('.back-to-top').style.display = "none";
-    }
-};
+            // Toggle menu when hamburger is clicked
+            if (menuToggle && mainNav) {
+                menuToggle.addEventListener('click', function () {
+                    mainNav.classList.toggle('active');
+                    menuToggle.classList.toggle('active');
+                    body.classList.toggle('menu-open');
 
-function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-}
+                    const isExpanded = mainNav.classList.contains('active');
+                    menuToggle.setAttribute('aria-expanded', isExpanded);
+                });
 
-// Cookie Consent Banner
-function acceptCookies() {
-    document.getElementById('cookie-consent').style.display = 'none';
-}
-</script>
-<script>// Toggle Chat Window
-    function toggleChatWindow() {
-        const chatWindow = document.getElementById("chatWindow");
-        chatWindow.style.display = (chatWindow.style.display === "block") ? "none" : "block";
-    }
-    
-    // Close the Chat Window
-    function closeChatWindow() {
-        document.getElementById("chatWindow").style.display = "none";
-    }
-    
-    // Send Message
-    function sendMessage() {
-        const chatInput = document.getElementById("chatInput");
-        const message = chatInput.value.trim();
-        if (message !== "") {
-            displayMessage(message, 'user');
-            chatInput.value = ""; // Clear input field
-    
-            // Simulate a response from the support team after a short delay
-            setTimeout(() => {
-                const response = "Thank you for your message! We will get back to you shortly.";
-                displayMessage(response, 'support');
-            }, 1000);
-        }
-    }
-    
-    // Display Messages in Chat
-    function displayMessage(message, sender) {
-        const chatMessages = document.getElementById("chatMessages");
-    
-        const messageElement = document.createElement("div");
-        messageElement.classList.add('chat-message');
-        messageElement.classList.add(sender);
-    
-        const messageText = document.createElement("p");
-        messageText.textContent = message;
-    
-        messageElement.appendChild(messageText);
-        chatMessages.appendChild(messageElement);
-    
-        // Scroll to the bottom of the chat
-        chatMessages.scrollTop = chatMessages.scrollHeight;
-    }
+                // Close menu when clicking on a link
+                const navLinks = mainNav.querySelectorAll('a');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function () {
+                        mainNav.classList.remove('active');
+                        menuToggle.classList.remove('active');
+                        body.classList.remove('menu-open');
+                        menuToggle.setAttribute('aria-expanded', 'false');
+                    });
+                });
+            }
+
+            // Accordion Functionality
+            document.querySelectorAll('.accordion-header').forEach(button => {
+                button.addEventListener('click', () => {
+                    const body = button.nextElementSibling;
+                    body.style.display = body.style.display === "block" ? "none" : "block";
+                });
+            });
+
+            // Set current date
+            document.getElementById('currentDate').textContent = new Date().toLocaleDateString();
+
+            // Back-to-Top Button
+            window.onscroll = function () {
+                const backToTopBtn = document.querySelector('.back-to-top');
+                if (backToTopBtn) {
+                    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                        backToTopBtn.style.display = "block";
+                    } else {
+                        backToTopBtn.style.display = "none";
+                    }
+                }
+            };
+
+            function scrollToTop() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+
+            // Cookie Consent Banner
+            function acceptCookies() {
+                document.getElementById('cookie-consent').style.display = 'none';
+                localStorage.setItem('cookiesAccepted', 'true');
+            }
+
+            // Check if cookies were already accepted
+            if (localStorage.getItem('cookiesAccepted') === 'true') {
+                document.getElementById('cookie-consent').style.display = 'none';
+            }
+
+            // Chat functionality
+            const chatContainer = document.getElementById('chat-container');
+            if (chatContainer) {
+                chatContainer.addEventListener('click', function () {
+                    alert('Chat feature would open here. Integrate with a service like Tidio, Intercom, or Drift.');
+                });
+            }
+
+            // Handle window resize
+            window.addEventListener('resize', function () {
+                if (window.innerWidth > 768 && mainNav && mainNav.classList.contains('active')) {
+                    mainNav.classList.remove('active');
+                    if (menuToggle) menuToggle.classList.remove('active');
+                    body.classList.remove('menu-open');
+                    if (menuToggle) menuToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
     </script>
-    <!-- Link to JavaScript file -->
+
     <script src="javascript/main.js"></script>
 </body>
+
 </html>
